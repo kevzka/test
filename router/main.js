@@ -4,15 +4,15 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', (req, res) => {
-    res.sendFile(__path + '/views/home.html')
+    res.sendFile(__path + '/view/home.html')
 })
 
 router.get('/api', (req, res) => {
-    res.sendFile(__path + '/views/index.html')
+    res.sendFile(__path + '/view/index.html')
 })
 
 /*router.get('/api/about', (req, res) => {
-    res.sendFile(__path + '/views/about.html')
+    res.sendFile(__path + '/view/about.html')
 })*/
 
 router.get('/api/news', (req, res) => {
